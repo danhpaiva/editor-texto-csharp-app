@@ -64,6 +64,10 @@
             this.btn_italico = new System.Windows.Forms.ToolStripButton();
             this.btn_sublinhado = new System.Windows.Forms.ToolStripButton();
             this.btn_fonte = new System.Windows.Forms.ToolStripButton();
+            this.btn_esquerda = new System.Windows.Forms.ToolStripButton();
+            this.btn_centro = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_direita = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +105,11 @@
             this.btn_negrito,
             this.btn_italico,
             this.btn_sublinhado,
-            this.btn_fonte});
+            this.btn_fonte,
+            this.toolStripSeparator3,
+            this.btn_esquerda,
+            this.btn_centro,
+            this.btn_direita});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -352,6 +360,38 @@
             this.btn_fonte.Size = new System.Drawing.Size(23, 22);
             this.btn_fonte.Text = "Fonte";
             // 
+            // btn_esquerda
+            // 
+            this.btn_esquerda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_esquerda.Image = global::EditorDeTexto.Properties.Resources.esquerda;
+            this.btn_esquerda.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_esquerda.Name = "btn_esquerda";
+            this.btn_esquerda.Size = new System.Drawing.Size(23, 22);
+            this.btn_esquerda.Text = "Esquerda";
+            // 
+            // btn_centro
+            // 
+            this.btn_centro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_centro.Image = global::EditorDeTexto.Properties.Resources.centro;
+            this.btn_centro.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_centro.Name = "btn_centro";
+            this.btn_centro.Size = new System.Drawing.Size(23, 22);
+            this.btn_centro.Text = "Centro";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btn_direita
+            // 
+            this.btn_direita.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_direita.Image = global::EditorDeTexto.Properties.Resources.direita;
+            this.btn_direita.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_direita.Name = "btn_direita";
+            this.btn_direita.Size = new System.Drawing.Size(23, 22);
+            this.btn_direita.Text = "Direita";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,6 +450,10 @@
         private System.Windows.Forms.ToolStripButton btn_italico;
         private System.Windows.Forms.ToolStripButton btn_sublinhado;
         private System.Windows.Forms.ToolStripButton btn_fonte;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton btn_esquerda;
+        private System.Windows.Forms.ToolStripButton btn_centro;
+        private System.Windows.Forms.ToolStripButton btn_direita;
     }
 }
 
