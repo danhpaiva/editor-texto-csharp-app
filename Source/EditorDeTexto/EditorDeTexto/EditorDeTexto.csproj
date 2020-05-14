@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accessories-text-editor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\centro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\justificado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sublinhado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
