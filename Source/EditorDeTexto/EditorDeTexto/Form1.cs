@@ -44,11 +44,18 @@ namespace EditorDeTexto
             {
                 if(this.saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-
+                    //Criação do Arquivo
+                    FileStream arquivo = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write);
+                    StreamWriter paiva_streamWriter = new StreamWriter(arquivo); //Criação do "escrevedor"
+                    paiva_streamWriter.Flush(); //Responsável por fazer a transição com o buffer
+                    paiva_streamWriter.BaseStream.Seek(0, SeekOrigin.Begin); //A partir de onde começará a escrever - 0
+                    paiva_streamWriter.Write(this.richTextBox1.Text); //Conteúdo que será gravado
+                    paiva_streamWriter.Flush();
+                    paiva_streamWriter.Close(); //Fechar o "escrevedor"
                 }
-            } catch(Exception ex)
+            } catch(Exception ex) //Caso aconteça algum erro
             {
-
+                MessageBox.Show("Erro na gravação: " + ex.Message,"Erro ao gravar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

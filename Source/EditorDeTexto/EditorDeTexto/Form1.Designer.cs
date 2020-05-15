@@ -406,6 +406,10 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
+            // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
