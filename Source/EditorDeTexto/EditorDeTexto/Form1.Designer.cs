@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,36 +114,37 @@
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
+            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // salvarToolStripMenuItem
             // 
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(117, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // editarToolStripMenuItem
@@ -277,16 +279,17 @@
             // btn_novo
             // 
             this.btn_novo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_novo.Image = global::EditorDeTexto.Properties.Resources.novo;
+            this.btn_novo.Image = ((System.Drawing.Image)(resources.GetObject("btn_novo.Image")));
             this.btn_novo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_novo.Name = "btn_novo";
             this.btn_novo.Size = new System.Drawing.Size(23, 22);
             this.btn_novo.Text = "Novo";
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // btn_abrir
             // 
             this.btn_abrir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_abrir.Image = global::EditorDeTexto.Properties.Resources.abrir;
+            this.btn_abrir.Image = ((System.Drawing.Image)(resources.GetObject("btn_abrir.Image")));
             this.btn_abrir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_abrir.Name = "btn_abrir";
             this.btn_abrir.Size = new System.Drawing.Size(23, 22);
@@ -295,7 +298,7 @@
             // btn_salvar
             // 
             this.btn_salvar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_salvar.Image = global::EditorDeTexto.Properties.Resources.salvar;
+            this.btn_salvar.Image = ((System.Drawing.Image)(resources.GetObject("btn_salvar.Image")));
             this.btn_salvar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(23, 22);
@@ -309,7 +312,7 @@
             // btn_copiar
             // 
             this.btn_copiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_copiar.Image = global::EditorDeTexto.Properties.Resources.copiar;
+            this.btn_copiar.Image = ((System.Drawing.Image)(resources.GetObject("btn_copiar.Image")));
             this.btn_copiar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_copiar.Name = "btn_copiar";
             this.btn_copiar.Size = new System.Drawing.Size(23, 22);
@@ -318,7 +321,7 @@
             // btn_colar
             // 
             this.btn_colar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_colar.Image = global::EditorDeTexto.Properties.Resources.colar;
+            this.btn_colar.Image = ((System.Drawing.Image)(resources.GetObject("btn_colar.Image")));
             this.btn_colar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_colar.Name = "btn_colar";
             this.btn_colar.Size = new System.Drawing.Size(23, 22);
@@ -332,7 +335,7 @@
             // btn_negrito
             // 
             this.btn_negrito.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_negrito.Image = global::EditorDeTexto.Properties.Resources.negrito;
+            this.btn_negrito.Image = ((System.Drawing.Image)(resources.GetObject("btn_negrito.Image")));
             this.btn_negrito.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_negrito.Name = "btn_negrito";
             this.btn_negrito.Size = new System.Drawing.Size(23, 22);
@@ -341,7 +344,7 @@
             // btn_italico
             // 
             this.btn_italico.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_italico.Image = global::EditorDeTexto.Properties.Resources.italico;
+            this.btn_italico.Image = ((System.Drawing.Image)(resources.GetObject("btn_italico.Image")));
             this.btn_italico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_italico.Name = "btn_italico";
             this.btn_italico.Size = new System.Drawing.Size(23, 22);
@@ -350,7 +353,7 @@
             // btn_sublinhado
             // 
             this.btn_sublinhado.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_sublinhado.Image = global::EditorDeTexto.Properties.Resources.sublinhado;
+            this.btn_sublinhado.Image = ((System.Drawing.Image)(resources.GetObject("btn_sublinhado.Image")));
             this.btn_sublinhado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_sublinhado.Name = "btn_sublinhado";
             this.btn_sublinhado.Size = new System.Drawing.Size(23, 22);
@@ -359,7 +362,7 @@
             // btn_fonte
             // 
             this.btn_fonte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_fonte.Image = global::EditorDeTexto.Properties.Resources.fonte;
+            this.btn_fonte.Image = ((System.Drawing.Image)(resources.GetObject("btn_fonte.Image")));
             this.btn_fonte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_fonte.Name = "btn_fonte";
             this.btn_fonte.Size = new System.Drawing.Size(23, 22);
@@ -373,7 +376,7 @@
             // btn_esquerda
             // 
             this.btn_esquerda.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_esquerda.Image = global::EditorDeTexto.Properties.Resources.esquerda;
+            this.btn_esquerda.Image = ((System.Drawing.Image)(resources.GetObject("btn_esquerda.Image")));
             this.btn_esquerda.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_esquerda.Name = "btn_esquerda";
             this.btn_esquerda.Size = new System.Drawing.Size(23, 22);
@@ -382,7 +385,7 @@
             // btn_centro
             // 
             this.btn_centro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_centro.Image = global::EditorDeTexto.Properties.Resources.centro;
+            this.btn_centro.Image = ((System.Drawing.Image)(resources.GetObject("btn_centro.Image")));
             this.btn_centro.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_centro.Name = "btn_centro";
             this.btn_centro.Size = new System.Drawing.Size(23, 22);
@@ -391,7 +394,7 @@
             // btn_direita
             // 
             this.btn_direita.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_direita.Image = global::EditorDeTexto.Properties.Resources.direita;
+            this.btn_direita.Image = ((System.Drawing.Image)(resources.GetObject("btn_direita.Image")));
             this.btn_direita.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_direita.Name = "btn_direita";
             this.btn_direita.Size = new System.Drawing.Size(23, 22);
