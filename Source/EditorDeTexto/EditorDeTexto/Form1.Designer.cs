@@ -129,6 +129,7 @@
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
             this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
+            this.salvarToolStripMenuItem.Click += new System.EventHandler(this.salvarToolStripMenuItem_Click);
             // 
             // imprimirToolStripMenuItem
             // 
@@ -303,6 +304,7 @@
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(23, 22);
             this.btn_salvar.Text = "Salvar";
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
             // toolStripSeparator1
             // 

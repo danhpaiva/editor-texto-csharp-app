@@ -37,5 +37,29 @@ namespace EditorDeTexto
         {
             Novo();
         }
+
+        private void Salvar() //Função para salvar o documento
+        {
+            try
+            {
+                if(this.saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+
+                }
+            } catch(Exception ex)
+            {
+
+            }
+        }
+
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+            Salvar();
+        }
+
+        private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Salvar();
+        }
     }
 }
