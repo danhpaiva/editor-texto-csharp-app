@@ -46,12 +46,12 @@ namespace EditorDeTexto
                 {
                     //Criação do Arquivo
                     FileStream arquivo = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write);
-                    StreamWriter paiva_streamWriter = new StreamWriter(arquivo); //Criação do "escrevedor"
+                    StreamWriter paiva_streamWriter = new StreamWriter(arquivo); //Criação do escritor
                     paiva_streamWriter.Flush(); //Responsável por fazer a transição com o buffer
-                    paiva_streamWriter.BaseStream.Seek(0, SeekOrigin.Begin); //A partir de onde começará a escrever - 0
+                    paiva_streamWriter.BaseStream.Seek(0, SeekOrigin.Begin); //A partir de onde começará a escrever
                     paiva_streamWriter.Write(this.richTextBox1.Text); //Conteúdo que será gravado
                     paiva_streamWriter.Flush();
-                    paiva_streamWriter.Close(); //Fechar o "escrevedor"
+                    paiva_streamWriter.Close(); //Fechar o escritor
                 }
             } catch(Exception ex) //Caso aconteça algum erro
             {
@@ -67,6 +67,50 @@ namespace EditorDeTexto
         private void salvarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Salvar();
+        }
+
+        private void Abrir() //Função para abrir documentos
+        {
+            this.openFileDialog1.Title = "Abrir Arquivo"; //Título
+            openFileDialog1.InitialDirectory = ""; //Diretório inicial
+            openFileDialog1.FileName = ""; //Limpa nome do arquivo
+            openFileDialog1.Filter = "Arquivo de texto (*.txt)|*.txt|Todos os arquivos(*.*)|*.*"; //Opção de filtro que irá abrir
+
+            DialogResult dr = this.openFileDialog1.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                try
+                {
+                    FileStream arquivo = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
+                    StreamReader paiva_streamReader = new StreamReader(arquivo); //Criação do leitor
+                    paiva_streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
+                    this.richTextBox1.Text = "";
+
+                    string linha = paiva_streamReader.ReadLine(); //Ler uma linha e armazenar na variável
+
+                    //Enquanto houver linha ele vai ler e armazenar na variavel linha
+                    while(linha != null)
+                    {
+                        this.richTextBox1.Text += linha + "\n";
+                        linha = paiva_streamReader.ReadLine(); //Leitura da nova linha
+                    }
+                    paiva_streamReader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro de leitura: " + ex.Message, "Erro ao ler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btn_abrir_Click(object sender, EventArgs e)
+        {
+            Abrir();
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir();
         }
     }
 }
