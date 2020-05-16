@@ -69,11 +69,11 @@ namespace EditorDeTexto
             Salvar();
         }
 
-        private void Abrir() //Função para abrir documentos
+        private void Abrir() //Função para abrir documento
         {
-            this.openFileDialog1.Title = "Abrir Arquivo"; //Título
-            openFileDialog1.InitialDirectory = ""; //Diretório inicial
-            openFileDialog1.FileName = ""; //Limpa nome do arquivo
+            this.openFileDialog1.Title = "Abrir arquivo"; //Título da janela
+            openFileDialog1.InitialDirectory = ""; //Diretório inicial - Desktop
+            openFileDialog1.FileName = ""; //Limpa o nome da busca pelo arquivo
             openFileDialog1.Filter = "Arquivo de texto (*.txt)|*.txt|Todos os arquivos(*.*)|*.*"; //Opção de filtro que irá abrir
 
             DialogResult dr = this.openFileDialog1.ShowDialog();
