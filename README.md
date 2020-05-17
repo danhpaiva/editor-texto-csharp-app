@@ -15,7 +15,6 @@ O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar,
 #### Ferramentas utilizadas:
 
 IDE: Visual Studio 2019 <br>
-Controle de Versão: GIT <br>
 Ícone do APP: Icon Archive - http://www.iconarchive.com <br>
 Pacote de Ícones: Fonte Awesome - https://fontawesome.com/ <br>
 Requisito: .Net FrameWork 4.7.2 <br>
@@ -32,7 +31,6 @@ The Editor has several functions, including: open, save, print, copy, paste, tex
 ### Tools used:
 
 IDE: Visual Studio 2019 <br>
-Version Control: GIT <br>
 APP icon: Icon Archive - http://www.iconarchive.com <br>
 Icon Pack: Awesome Font - https://fontawesome.com/ <br>
 Requirement: .Net FrameWork 4.7.2 <br>
