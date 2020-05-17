@@ -20,7 +20,7 @@ Controle de Versão: GIT <br>
 Pacote de Ícones: Fonte Awesome - https://fontawesome.com/ <br>
 Requisito: .Net FrameWork 4.7.2 <br>
 
-# Text editor (English)
+# Text Editor (English)
 
 ### Description:
 
