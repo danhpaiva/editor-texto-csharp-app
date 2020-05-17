@@ -9,7 +9,7 @@
 
 Projeto desenvolvido para nível de estudos e aprimoramento técnico.
 
-Criação de um editor de texto utilizando Windows Forms e ícones próprios para estilização.
+Criação de um editor de texto utilizando Windows Forms e ícones próprios para estilização. <br>
 O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar, colar, alinhamento do texto, etc.
 
 #### Ferramentas utilizadas:
@@ -25,7 +25,7 @@ Requisito: .Net FrameWork 4.7.2 <br>
 
 Project developed for studies and technical improvement.
 
-Creation of a text editor using Windows Forms and icons for styling.
+Creation of a text editor using Windows Forms and icons for styling. <br>
 The Editor has several functions, including: open, save, print, copy, paste, text alignment, etc.
 
 ### Tools used:
