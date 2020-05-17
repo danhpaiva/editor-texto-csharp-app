@@ -98,7 +98,7 @@ namespace EditorDeTexto
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro de leitura: " + ex.Message, "Erro ao ler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Erro de leitura: " + ex.Message, "Erro ao ler arquivo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
