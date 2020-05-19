@@ -148,7 +148,7 @@ namespace EditorDeTexto
             Colar();
         }
 
-        private void Negrito()
+        private void Negritar()
         {
             string nome_da_fonte = null;
             float tamanho_da_fonte = 0;
@@ -169,7 +169,7 @@ namespace EditorDeTexto
             }    
         }
 
-        private void Italico()
+        private void Italicar()
         {
             string nome_da_fonte = null;
             float tamanho_da_fonte = 0;
@@ -177,17 +177,63 @@ namespace EditorDeTexto
 
             nome_da_fonte = richTextBox1.Font.Name;
             tamanho_da_fonte = richTextBox1.Font.Size;
-            italico = richTextBox1.Font.Bold;
+            italico = richTextBox1.Font.Italic;
 
-            //Verificação se o campo selecionado está em italico
+            //Verificação se o campo selecionado está em itálico
             if (italico == false)
             {
                 richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o itálico no texto
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum (sem itálico)
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o texto de forma comum (sem itálico)
             }
+        }
+
+        private void Sublinhar()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool sublinhado = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            sublinhado = richTextBox1.Font.Underline;
+
+            //Verificação se o campo selecionado está com sublinhado
+            if (sublinhado == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o sublinhado no texto
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o texto de forma comum (sem sublinhado)
+            }
+        }
+
+        private void btn_negrito_Click(object sender, EventArgs e)
+        {
+            Negritar();
+        }
+
+        private void btn_italico_Click(object sender, EventArgs e)
+        {
+            Italicar();
+        }
+
+        private void btn_sublinhado_Click(object sender, EventArgs e)
+        {
+            Sublinhar();
+        }
+
+        private void negritoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Negritar();
+        }
+
+        private void itálicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Italicar();
         }
     }
 }
