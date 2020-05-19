@@ -19,7 +19,7 @@ namespace EditorDeTexto
         {
             InitializeComponent();
         }
-        
+
         private void Novo() //Função para criar novo documento
         {
             //Limpar Texto dentro da Caixa de Diálogo
@@ -42,7 +42,7 @@ namespace EditorDeTexto
         {
             try
             {
-                if(this.saveFileDialog1.ShowDialog() == DialogResult.OK)
+                if (this.saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     //Criação do Arquivo
                     FileStream arquivo = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate, FileAccess.Write);
@@ -53,9 +53,10 @@ namespace EditorDeTexto
                     paiva_streamWriter.Flush();
                     paiva_streamWriter.Close(); //Fechar o escritor
                 }
-            } catch(Exception ex) //Caso aconteça algum erro
+            }
+            catch (Exception ex) //Caso aconteça algum erro
             {
-                MessageBox.Show("Erro na gravação: " + ex.Message,"Erro ao gravar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro na gravação: " + ex.Message, "Erro ao gravar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -89,7 +90,7 @@ namespace EditorDeTexto
                     string linha = paiva_streamReader.ReadLine(); //Ler uma linha e armazenar na variável
 
                     //Enquanto houver linha ele vai ler e armazenar na variavel linha
-                    while(linha != null)
+                    while (linha != null)
                     {
                         this.richTextBox1.Text += linha + "\n";
                         linha = paiva_streamReader.ReadLine(); //Leitura da nova linha
@@ -111,6 +112,82 @@ namespace EditorDeTexto
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Abrir();
+        }
+
+        private void Copiar()
+        {
+            //Verificar se existe uma seleção de texto para copiar
+            if (richTextBox1.SelectionLength > 0) //Tem conteúdo selecionado
+            {
+                richTextBox1.Copy(); //Copiar conteúdo
+            }
+        }
+
+        private void Colar()
+        {
+            richTextBox1.Paste(); //Colar conteúdo
+        }
+
+        private void btn_copiar_Click(object sender, EventArgs e)
+        {
+            Copiar();
+        }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Copiar();
+        }
+
+        private void btn_colar_Click(object sender, EventArgs e)
+        {
+            Colar();
+        }
+
+        private void colarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Colar();
+        }
+
+        private void Negrito()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool negrito = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            negrito = richTextBox1.Font.Bold;
+
+            //Verificação se o campo selecionado está em negrito
+            if (negrito == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold); //Colocar o negrito no texto
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum (sem negrito)
+            }    
+        }
+
+        private void Italico()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool italico = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            italico = richTextBox1.Font.Bold;
+
+            //Verificação se o campo selecionado está em italico
+            if (italico == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o itálico no texto
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum (sem itálico)
+            }
         }
     }
 }

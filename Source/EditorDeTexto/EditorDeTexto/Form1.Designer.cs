@@ -164,14 +164,16 @@
             // copiarToolStripMenuItem
             // 
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copiarToolStripMenuItem.Text = "Copiar";
+            this.copiarToolStripMenuItem.Click += new System.EventHandler(this.copiarToolStripMenuItem_Click);
             // 
             // colarToolStripMenuItem
             // 
             this.colarToolStripMenuItem.Name = "colarToolStripMenuItem";
-            this.colarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.colarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colarToolStripMenuItem.Text = "Colar";
+            this.colarToolStripMenuItem.Click += new System.EventHandler(this.colarToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -321,6 +323,7 @@
             this.btn_copiar.Name = "btn_copiar";
             this.btn_copiar.Size = new System.Drawing.Size(23, 22);
             this.btn_copiar.Text = "Copiar";
+            this.btn_copiar.Click += new System.EventHandler(this.btn_copiar_Click);
             // 
             // btn_colar
             // 
@@ -330,6 +333,7 @@
             this.btn_colar.Name = "btn_colar";
             this.btn_colar.Size = new System.Drawing.Size(23, 22);
             this.btn_colar.Text = "Colar";
+            this.btn_colar.Click += new System.EventHandler(this.btn_colar_Click);
             // 
             // toolStripSeparator2
             // 
