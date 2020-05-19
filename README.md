@@ -2,7 +2,7 @@
 ### :pencil: Projeto de um Editor de Texto criado em C#, utilizando Windows Forms. (Em Desenvolvimento)
 
 <p align="center">
-  <img src="https://i.imgur.com/J0AoL9A.png">
+  <img src="https://i.imgur.com/m9P7fBd.png">
 </p>
 
 ### Descrição:
