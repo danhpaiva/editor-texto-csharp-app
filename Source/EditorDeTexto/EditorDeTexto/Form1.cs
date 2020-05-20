@@ -152,41 +152,101 @@ namespace EditorDeTexto
         {
             string nome_da_fonte = null;
             float tamanho_da_fonte = 0;
-            bool negrito = false;
+            bool negrito, italico, sublinhado = false;
 
             nome_da_fonte = richTextBox1.Font.Name;
             tamanho_da_fonte = richTextBox1.Font.Size;
-            negrito = richTextBox1.Font.Bold;
+            negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
+
+            richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum (sem negrito)
 
             //Verificação se o campo selecionado está em negrito
             if (negrito == false)
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold); //Colocar o negrito no texto
+                if (italico == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline); //Colocar o texto em negrito, itálico e sublinhado
+                }
+                else if (italico == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Underline); //Colocar o texto em negrito e sublinhado
+                }
+                else if (italico == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic); //Colocar o texto em negrito e itálico
+                }
+                else if (italico == false & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold); //Colocar o texto em negrito
+                }
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum (sem negrito)
-            }    
+                if (italico == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic | FontStyle.Underline); //Colocar o texto itálico e sublinhado
+                }
+                else if (italico == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o texto em sublinhado
+                }
+                else if (italico == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o texto em itálico
+                }
+            }
         }
 
         private void Italicar()
         {
             string nome_da_fonte = null;
             float tamanho_da_fonte = 0;
-            bool italico = false;
+            bool negrito, italico, sublinhado = false;
 
             nome_da_fonte = richTextBox1.Font.Name;
             tamanho_da_fonte = richTextBox1.Font.Size;
-            italico = richTextBox1.Font.Italic;
+            negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
+
+            richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum
 
             //Verificação se o campo selecionado está em itálico
             if (italico == false)
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o itálico no texto
+                if (negrito == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline); //Colocar o texto em negrito, itálico e sublinhado
+                }
+                else if (negrito == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic | FontStyle.Underline); //Colocar o texto em itálico e sublinhado
+                }
+                else if (negrito == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic); //Colocar o texto em negrito e itálico
+                }
+                else if (negrito == false & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o texto em Itálico
+                }
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o texto de forma comum (sem itálico)
+                if (negrito == true & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Underline); //Colocar o texto negrito e sublinhado
+                }
+                else if (negrito == false & sublinhado == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o texto em sublinhado
+                }
+                else if (negrito == true & sublinhado == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold); //Colocar o texto em negrito
+                }
             }
         }
 
@@ -194,20 +254,50 @@ namespace EditorDeTexto
         {
             string nome_da_fonte = null;
             float tamanho_da_fonte = 0;
-            bool sublinhado = false;
+            bool negrito, italico, sublinhado = false;
 
             nome_da_fonte = richTextBox1.Font.Name;
             tamanho_da_fonte = richTextBox1.Font.Size;
-            sublinhado = richTextBox1.Font.Underline;
+            negrito = richTextBox1.SelectionFont.Bold;
+            italico = richTextBox1.SelectionFont.Italic;
+            sublinhado = richTextBox1.SelectionFont.Underline;
 
-            //Verificação se o campo selecionado está com sublinhado
+            richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular); //Colocar o texto de forma comum
+
+            //Verificação se o campo selecionado está sublinhado
             if (sublinhado == false)
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o sublinhado no texto
+                if (negrito == true & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline); //Colocar o texto em negrito, itálico e sublinhado
+                }
+                else if (negrito == false & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic | FontStyle.Underline); //Colocar o texto em itálico e sublinhado
+                }
+                else if (negrito == true & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Underline); //Colocar o texto em negrito e sublinhado
+                }
+                else if (negrito == false & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o texto sublinhado
+                }
             }
             else
             {
-                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline); //Colocar o texto de forma comum (sem sublinhado)
+                if (negrito == true & italico== true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic); //Colocar o texto negrito e italico
+                }
+                else if (negrito == false & italico == true)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic); //Colocar o texto em itálico
+                }
+                else if (negrito == true & italico == false)
+                {
+                    richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold); //Colocar o texto em negrito
+                }
             }
         }
 
