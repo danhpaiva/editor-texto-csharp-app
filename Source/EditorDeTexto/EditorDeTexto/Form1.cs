@@ -286,7 +286,7 @@ namespace EditorDeTexto
             }
             else
             {
-                if (negrito == true & italico== true)
+                if (negrito == true & italico == true)
                 {
                     richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Bold | FontStyle.Italic); //Colocar o texto negrito e italico
                 }
@@ -300,6 +300,22 @@ namespace EditorDeTexto
                 }
             }
         }
+
+        private void alinharEsquerda() //ALinhar texto a esquerda
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void alinharCentro()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        private void alinharDireita()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
 
         private void btn_negrito_Click(object sender, EventArgs e)
         {
@@ -324,6 +340,36 @@ namespace EditorDeTexto
         private void itálicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Italicar();
+        }
+
+        private void btn_esquerda_Click(object sender, EventArgs e)
+        {
+            alinharEsquerda();
+        }
+
+        private void btn_centro_Click(object sender, EventArgs e)
+        {
+            alinharCentro();
+        }
+
+        private void btn_direita_Click(object sender, EventArgs e)
+        {
+            alinharDireita();
+        }
+
+        private void centralizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharCentro();
+        }
+
+        private void esquerdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharEsquerda();
+        }
+
+        private void diretaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharDireita();
         }
     }
 }
