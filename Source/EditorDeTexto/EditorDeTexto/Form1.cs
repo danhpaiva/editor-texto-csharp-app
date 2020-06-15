@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -392,7 +386,53 @@ namespace EditorDeTexto
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            float linhasPagina = 0;
+            float PosicaoY = 0;
+            int contador = 0;
+            float margemEsquerda = e.MarginBounds.Left - 50;
+            float margemSuperior = e.MarginBounds.Top - 50;
 
+            if (margemEsquerda < 5)
+            {
+                margemEsquerda = 20;
+            }
+
+            if (margemSuperior < 5)
+            {
+                margemSuperior = 20;
+            }
+
+            string linha = null;
+
+            Font fontePagina = this.richTextBox1.Font;
+
+            SolidBrush pincel = new SolidBrush(Color.Black);
+
+            linhasPagina = e.MarginBounds.Height / fontePagina.GetHeight(e.Graphics); //Calcular o número de linhas por página
+
+            linha = leitura.ReadLine(); //Ler as linhas do elemento leitura que recebeu o conteúdo do RichTextBox
+
+            while (contador < linhasPagina)
+            {
+                PosicaoY = (margemSuperior + (contador * fontePagina.GetHeight(e.Graphics)));
+
+                e.Graphics.DrawString(linha, fontePagina, pincel, margemEsquerda, PosicaoY, new StringFormat());
+
+                contador += 1; //Sair do loop
+
+                linha = leitura.ReadLine();
+            }
+
+            if(linha != null)
+            {
+                e.HasMorePages = true; //Controle para imprimir outra página.
+            }
+            else
+            {
+                e.HasMorePages = false; //Caso não existam mais linhas, termina a impressão na página.
+            }
+
+            pincel.Dispose();
         }
     }
 }
