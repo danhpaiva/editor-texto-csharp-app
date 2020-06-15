@@ -14,7 +14,7 @@ namespace EditorDeTexto
     public partial class Form1 : Form
     {
         //Criação da variável leitura
-        StreamReader leitura = null;
+        StringReader leitura = null;
         public Form1()
         {
             InitializeComponent();
@@ -301,6 +301,19 @@ namespace EditorDeTexto
             }
         }
 
+        private void Imprimir()
+        {
+            printDialog1.Document = printDocument1;
+
+            string texto = richTextBox1.Text;
+
+            leitura = new StringReader(texto);
+
+            if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.printDocument1.Print();
+            }
+        }
         private void alinharEsquerda() //ALinhar texto a esquerda
         {
             richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
@@ -370,6 +383,16 @@ namespace EditorDeTexto
         private void diretaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             alinharDireita();
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Imprimir();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
         }
     }
 }
