@@ -434,5 +434,12 @@ namespace EditorDeTexto
 
             pincel.Dispose();
         }
+
+        private void btn_fonte_Click(object sender, EventArgs e)
+        {
+            ColorDialog cor = new ColorDialog(); //Instanciando o componente para selecionar a cor de uma paleta
+
+            cor.ShowDialog();
+        }
     }
 }
