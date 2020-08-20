@@ -33,7 +33,7 @@ The Editor has several functions, including: open, save, print, copy, paste, tex
 IDE: Visual Studio 2019 <br>
 APP icon: Icon Archive - http://www.iconarchive.com <br>
 Icon Pack: Awesome Font - https://fontawesome.com/ <br>
-Requirement: .Net FrameWork 4.7.2 <br>
+Requirement: .Net FrameWork 4.8 <br>
 
 ## :lock: Licença
 
