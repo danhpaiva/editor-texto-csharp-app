@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EditorDeTexto")]
+[assembly: AssemblyTitle("Editor de Texto")]
 [assembly: AssemblyDescription("Editor de Texto")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Daniel Paiva")]
-[assembly: AssemblyProduct("EditorDeTexto")]
+[assembly: AssemblyProduct("Editor de Texto")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("Daniel Paiva")]
 [assembly: AssemblyCulture("")]

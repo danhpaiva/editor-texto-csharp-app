@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editor De Texto.exe" size="850400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editor De Texto.exe" size="848864">
       <assemblyIdentity name="Editor De Texto" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EDO8+I75lApH4rzxoLgYoMsWddHrTN68H/gizduXqQk=</dsig:DigestValue>
+        <dsig:DigestValue>+xv3mWcZe6X8sXPdQDjzJDak85lgyAKyp3MCPT99E4c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
