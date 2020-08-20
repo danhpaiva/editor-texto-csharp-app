@@ -18,17 +18,17 @@ C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\Source\EditorDeTexto\EditorDeTex
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\Source\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\Source\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.exe
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\Source\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.pdb
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.exe.config
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.exe.manifest
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.application
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.exe
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\EditorDeTexto.pdb
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csprojAssemblyReference.cache
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.Form1.resources
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.Properties.Resources.resources
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.GenerateResource.cache
 C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.csproj.CoreCompileInputs.cache
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.exe.manifest
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.application
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.exe
-C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\EditorDeTexto.pdb
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\Editor De Texto.exe.config
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\Editor De Texto.exe.manifest
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\Editor De Texto.application
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\Editor De Texto.exe
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\bin\Debug\Editor De Texto.pdb
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\Editor De Texto.exe.manifest
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\Editor De Texto.application
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\Editor De Texto.exe
+C:\Users\Paiva\Desktop\EditorDeTexto-CSharp-App\EditorDeTexto\EditorDeTexto\obj\Debug\Editor De Texto.pdb
