@@ -35,4 +35,6 @@ APP icon: Icon Archive - http://www.iconarchive.com <br>
 Icon Pack: Awesome Font - https://fontawesome.com/ <br>
 Requirement: .Net FrameWork 4.7.2 <br>
 
-## lock
+## :lock: Licença
+
+Desenvolvido por <a href="https://www.linkedin.com/in/danhpaiva/">Daniel Paiva</a>
