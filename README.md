@@ -12,12 +12,12 @@ Projeto desenvolvido para nível de estudos e aprimoramento técnico.
 Criação de um editor de texto utilizando Windows Forms e ícones próprios para estilização. <br>
 O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar, colar, alinhamento do texto, etc.
 
-#### Ferramentas utilizadas:
+### Ferramentas utilizadas:
 
 IDE: Visual Studio 2019 <br>
 Ícone do APP: Icon Archive - http://www.iconarchive.com <br>
 Pacote de Ícones: Fonte Awesome - https://fontawesome.com/ <br>
-Requisito: .Net FrameWork 4.7.2 <br>
+Requisito: .Net FrameWork 4.8 <br>
 
 # Text Editor (English)
 
