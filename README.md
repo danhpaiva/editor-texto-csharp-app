@@ -19,22 +19,6 @@ IDE: Visual Studio 2019 <br>
 Pacote de Ícones: Fonte Awesome - https://fontawesome.com/ <br>
 Requisito: .Net FrameWork 4.8 <br>
 
-# Text Editor (English)
-
-### Description:
-
-Project developed for studies and technical improvement.
-
-Creation of a text editor using Windows Forms and icons for styling. <br>
-The Editor has several functions, including: open, save, print, copy, paste, text alignment, etc.
-
-### Tools used:
-
-IDE: Visual Studio 2019 <br>
-APP icon: Icon Archive - http://www.iconarchive.com <br>
-Icon Pack: Awesome Font - https://fontawesome.com/ <br>
-Requirement: .Net FrameWork 4.8 <br>
-
 ## :lock: Licença
 
 Desenvolvido por <a href="https://www.linkedin.com/in/danhpaiva/">Daniel Paiva</a>
