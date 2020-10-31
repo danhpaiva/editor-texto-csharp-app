@@ -1,18 +1,18 @@
 # Editor De Texto
-### :pencil: Projeto de um Editor de Texto criado em C#, utilizando Windows Forms Application.
+### :pencil: Projeto de um Editor de Texto criado em C#, utilizando Windows Forms Application
 
 <p align="center">
   <img src="https://i.imgur.com/m9P7fBd.png">
 </p>
 
-### Descrição:
+### Descrição
 
 Projeto desenvolvido para nível de estudos e aprimoramento técnico.
 
 Criação de um editor de texto utilizando Windows Forms e ícones próprios para estilização. <br>
 O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar, colar, alinhamento do texto, etc.
 
-### Ferramentas utilizadas:
+### :toolbox: Ferramentas utilizadas:
 
 IDE: Visual Studio 2019 <br>
 Ícone do APP: Icon Archive - http://www.iconarchive.com <br>
