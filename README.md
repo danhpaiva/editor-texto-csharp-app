@@ -17,7 +17,7 @@ O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar,
 IDE: Visual Studio 2019 <br>
 Ícone do APP: Icon Archive - http://www.iconarchive.com <br>
 Pacote de Ícones: Fonte Awesome - https://fontawesome.com/ <br>
-Requisito: .Net FrameWork 4.8 <br>
+Requisito: .Net FrameWork 4.6.1 <br>
 
 ## :lock: Licença
 
