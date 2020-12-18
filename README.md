@@ -1,7 +1,7 @@
 # Editor De Texto
 
 <p align="center">
-  <img src="https://i.imgur.com/m9P7fBd.png" width="400">
+  <img src="https://i.imgur.com/m9P7fBd.png" width="500">
 </p>
 
 ### Descrição
