@@ -1,8 +1,7 @@
 # Editor De Texto
-### :pencil: Projeto de um Editor de Texto criado em C#, utilizando Windows Forms Application
 
 <p align="center">
-  <img src="https://i.imgur.com/m9P7fBd.png">
+  <img src="https://i.imgur.com/m9P7fBd.png" width="400">
 </p>
 
 ### Descrição
