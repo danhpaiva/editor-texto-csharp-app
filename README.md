@@ -4,7 +4,7 @@
   <img src="https://i.imgur.com/m9P7fBd.png" width="500">
 </p>
 
-### Descrição
+### :scroll: Descrição
 
 Projeto desenvolvido para nível de estudos e aprimoramento técnico.
 
