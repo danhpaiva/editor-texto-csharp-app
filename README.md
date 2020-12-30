@@ -11,7 +11,7 @@ Projeto desenvolvido para nível de estudos e aprimoramento técnico.
 Criação de um editor de texto utilizando Windows Forms e ícones próprios para estilização. <br>
 O Editor possui várias funções, dentre elas: abrir, salvar, imprimir, copiar, colar, alinhamento do texto, etc.
 
-### :toolbox: Ferramentas utilizadas:
+### :toolbox: Ferramentas utilizadas
 
 - IDE: Visual Studio 2019 <br>
 - Ícone do APP: Icon Archive - http://www.iconarchive.com <br>
